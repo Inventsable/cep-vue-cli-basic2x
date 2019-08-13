@@ -4,6 +4,9 @@
     <!-- Content should go inside #app -->
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue CLI panel" />
+
+    <!-- Utility component to handle context and flyout menus -->
+    <menus />
   </div>
 </template>
 
@@ -13,6 +16,7 @@
 
 // Create your own components and import them here
 import HelloWorld from "./components/HelloWorld.vue";
+import menus from "./components/menus.vue";
 
 // Dynamic CSS variables that automatically handle all app themes and changes:
 // https://github.com/Inventsable/starlette
@@ -21,7 +25,8 @@ import starlette from "starlette";
 export default {
   name: "app",
   components: {
-    HelloWorld
+    HelloWorld,
+    menus
   },
   data: () => ({
     csInterface: null
@@ -45,13 +50,6 @@ export default {
 </script>
 
 <style>
-#app {
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
 /* Various helper styles to match application theme */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 :root {
