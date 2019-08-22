@@ -35,7 +35,7 @@ const ORA_SPINNER = {
 };
 
 const cepBlock = `${chalk.black.bgBlue(" CEP ")}`;
-const helpPrompt = `${cepBlock} 😅   Didn't mean to do that? Use ${chalk.yellow(
+const helpPrompt = `${cepBlock}  Didn't mean to do that? Use ${chalk.yellow(
   "npm run help"
 )} to see a full list of commands`;
 
@@ -150,7 +150,7 @@ module.exports = {
         )}`
       );
       console.log(
-        `   👍  Self-signed certificates via ${chalk.yellow(
+        `   Self-signed certificates via ${chalk.yellow(
           "npm run sign"
         )} will use this data!`
       );
@@ -172,7 +172,7 @@ module.exports = {
 
     // beginning the prompts
 
-    console.log(`${cepBlock}  🤘  Signing ${chalk.blue(extString)}!`);
+    console.log(`${cepBlock}  Signing ${chalk.blue(extString)}!`);
     console.log("");
     console.log(
       `   Be sure to run ${chalk.yellow(
@@ -219,7 +219,7 @@ module.exports = {
                 })
               );
               console.log(
-                `   👍  You can find it in ${chalk.green(
+                `      You can find it in ${chalk.green(
                   `./archive/${extString}.zxp`
                 )}`
               );
@@ -283,7 +283,7 @@ module.exports = {
             });
         else {
           console.log("");
-          console.log(`   👍  All right! No changes have been made.`);
+          console.log(`   All right! No changes have been made.`);
           endMessage();
         }
       })
@@ -341,7 +341,7 @@ module.exports = {
           });
         } else {
           console.log("");
-          console.log(`   👍  All right! No changes will be made.`);
+          console.log(`   All right! No changes will be made.`);
           endMessage();
         }
       })
